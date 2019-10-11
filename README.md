@@ -19,7 +19,7 @@ From ```['/home/jetson/denis/img_celeba/000001.jpg', '2880']``` to ```['<your_pa
 --save_one_in: How often save "trt_1d_result.json" file with accuracy, in iterations (default=1000)
 ```
 ### Accuracy results
-Each <save_one_in> iteraion file "mxnet_1d_result.json" will be stored. This file consist num_iteration and accuracy on this iteration.
+Each <save_one_in> iteraion file "tf_1d_result.json" will be stored. This file consist num_iteration and accuracy on this iteration.
 
 
 ## References
