@@ -8,9 +8,9 @@ test_img = cv2.imread(configs.test_img_fp)
 test_img = cv2.resize(test_img, configs.face_describer_tensor_shape)
 
 # Define input tensors feed to session graph
-dropout_rate = 0.5
-input_data = [np.expand_dims(test_img, axis=0), dropout_rate]
-
+#dropout_rate = 0.5
+input_data = np.array([np.expand_dims(test_img, axis=0)])
+print(input_data.shape)
 # Define a Base Server
 srv = base_server.BaseServer(model_fp=configs.face_describer_model_fp,
                              input_tensor_names=configs.face_describer_input_tensor_names,
